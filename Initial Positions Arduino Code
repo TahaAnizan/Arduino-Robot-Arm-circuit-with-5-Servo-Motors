@@ -1,0 +1,24 @@
+void setup() {
+  servo01.attach(5);
+  servo02.attach(6);
+  servo03.attach(7);
+  servo04.attach(8);
+  servo05.attach(9);
+  servo06.attach(10);
+  Bluetooth.begin(38400); // Default baud rate of the Bluetooth module
+  Bluetooth.setTimeout(1);
+  delay(20);
+  // Robot arm initial position
+  servo1PPos = 90;
+  servo01.write(servo1PPos);
+  servo2PPos = 90;
+  servo02.write(servo2PPos);
+  servo3PPos = 90;
+  servo03.write(servo3PPos);
+  servo4PPos = 90;
+  servo04.write(servo4PPos);
+  servo5PPos = 90;
+  servo05.write(servo5PPos);
+  servo6PPos = 90;
+  servo06.write(servo6PPos);
+}
